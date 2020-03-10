@@ -2,7 +2,7 @@ import telebot
 import os
 
 api_key = os.environ.get('API_KEY')
-bot     = telebot.TeleBot(api_key, threaded=True)
+bot     = telebot.TeleBot(api_key)
 
 @bot.message_handler(content_types=['text'])
 @bot.message_handler(content_types=['sticker'])
