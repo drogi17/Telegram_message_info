@@ -1,4 +1,4 @@
-import telebot
+from TelegramBotAPI import telebot
 import os
 
 api_key = os.environ.get('API_KEY')
