@@ -1,7 +1,6 @@
 import telebot
 import os
 
-
 api_key = os.environ.get('API_KEY')
 bot     = telebot.TeleBot(api_key, threaded=True)
 
@@ -35,5 +34,5 @@ def message_reade(message):
     bot.send_message(message.chat.id, data, parse_mode="Markdown")
     # print(message)
 
-
+print('started')
 bot.polling()
